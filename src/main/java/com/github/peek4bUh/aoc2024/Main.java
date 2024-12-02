@@ -12,6 +12,7 @@ public class Main {
         Day1 day1 = new Day1();
 
         day1.getPuzzle1().play();
+        day1.getPuzzle2().play();
     }
 
 }
