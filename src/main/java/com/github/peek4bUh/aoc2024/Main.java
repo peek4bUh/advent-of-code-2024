@@ -16,6 +16,7 @@ public class Main {
         day1.getPuzzle1().play();
         day1.getPuzzle2().play();
         day2.getPuzzle1().play();
+        day2.getPuzzle2().play();
     }
 
 }
