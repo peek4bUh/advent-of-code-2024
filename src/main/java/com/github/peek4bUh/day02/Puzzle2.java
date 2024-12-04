@@ -68,7 +68,7 @@ public class Puzzle2 implements BasePuzzle {
         System.out.println("Solution 2b: " + safeReports);
     }
 
-    public static boolean isSafe(List<Integer> report) {
+    private static boolean isSafe(List<Integer> report) {
         boolean increasing = true;
         boolean decreasing = true;
 

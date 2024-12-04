@@ -116,7 +116,7 @@ public class Puzzle1 implements BasePuzzle {
 
     }
 
-    public static long calculateNumber(long a, long b) {
+    private static long calculateNumber(long a, long b) {
         if (a > b) {
             return a - b;
         } else if (a < b) {

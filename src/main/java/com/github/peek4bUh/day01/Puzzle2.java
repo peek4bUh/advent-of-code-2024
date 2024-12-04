@@ -1,7 +1,6 @@
 package com.github.peek4bUh.day01;
 
 import com.github.peek4bUh.aoc2024.BasePuzzle;
-import static com.github.peek4bUh.day01.Puzzle1.calculateNumber;
 import com.github.peek4bUh.utils.ReadFile;
 import java.util.ArrayList;
 import java.util.Collections;
@@ -83,7 +82,7 @@ public class Puzzle2 implements BasePuzzle {
         System.out.println("Solution 1b: " + total);
     }
 
-    public static long calculateNumberTimes(long n, List<Long> list) {
+    private static long calculateNumberTimes(long n, List<Long> list) {
         int nTotalTimes = 0;
 
         for (Long element : list) {
