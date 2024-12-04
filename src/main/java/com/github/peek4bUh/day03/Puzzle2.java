@@ -59,9 +59,9 @@ public class Puzzle2 implements BasePuzzle {
                 isEnabled = false;
             } else if (match.startsWith("mul")) {
                 if (isEnabled) {
-                    int x = Integer.parseInt(matcher.group(1));
-                    int y = Integer.parseInt(matcher.group(2));
-                    total += x * y;
+                    int n1 = Integer.parseInt(matcher.group(1));
+                    int n2 = Integer.parseInt(matcher.group(2));
+                    total += n1 * n2;
                 }
             }
         }

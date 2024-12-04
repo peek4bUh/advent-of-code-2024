@@ -46,20 +46,15 @@ public class Puzzle1 implements BasePuzzle {
     @Override
     public void play() {
         String input = ReadFile.getResourceFileAsString("input-day03.txt");
-        Pattern pattern = Pattern.compile("mul\\([0-9]+,[0-9]+\\)");
+        String regex = "mul\\((\\d+),(\\d+)\\)";
+        Pattern pattern = Pattern.compile(regex);
         Matcher matcher = pattern.matcher(input);
-        Pattern pattern2 = Pattern.compile("[0-9]+,[0-9]+");
-        Long total = 0L;
+        int total = 0;
 
         while (matcher.find()) {
-            Matcher matcher2 = pattern2.matcher(matcher.group());
-
-            if (matcher2.find()) {
-                Long n1 = Long.valueOf(matcher2.group().split(",")[0]);
-                Long n2 = Long.valueOf(matcher2.group().split(",")[1]);
-                total += n1 * n2;
-            }
-
+            int n1 = Integer.parseInt(matcher.group(1));
+            int n2 = Integer.parseInt(matcher.group(2));
+            total += n1 * n2;
         }
 
         System.out.println("Solution 3a: " + total);
