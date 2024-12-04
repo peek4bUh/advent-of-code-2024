@@ -20,6 +20,7 @@ public class Main {
         day2.getPuzzle1().play();
         day2.getPuzzle2().play();
         day3.getPuzzle1().play();
+        day3.getPuzzle2().play();
     }
 
 }
