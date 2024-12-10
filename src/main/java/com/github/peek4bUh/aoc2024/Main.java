@@ -3,6 +3,7 @@ package com.github.peek4bUh.aoc2024;
 import com.github.peek4bUh.day01.Day1;
 import com.github.peek4bUh.day02.Day2;
 import com.github.peek4bUh.day03.Day3;
+import com.github.peek4bUh.day04.Day4;
 
 /**
  *
@@ -14,6 +15,7 @@ public class Main {
         Day1 day1 = new Day1();
         Day2 day2 = new Day2();
         Day3 day3 = new Day3();
+        Day4 day4 = new Day4();
 
         day1.getPuzzle1().play();
         day1.getPuzzle2().play();
@@ -21,6 +23,7 @@ public class Main {
         day2.getPuzzle2().play();
         day3.getPuzzle1().play();
         day3.getPuzzle2().play();
+        day4.getPuzzle1().play();
     }
 
 }
